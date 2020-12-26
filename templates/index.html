@@ -1,0 +1,106 @@
+<!-- <!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            .image-container {
+                background-image: url("static/images/bg.jpg");
+                background-size: cover;
+                position: relative;
+                height: 150px;
+            }
+            
+            .text {
+                background-color: black;
+                color: white;
+                font-size: 80px; 
+                font-weight: bold;
+                margin: 0 auto;
+                padding: 10px;
+                width: 100%;
+                height: 150px;
+                text-align: center;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+                mix-blend-mode: multiply;
+            }
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+            
+        </style>
+    </head>
+    <body style="background-color:powderblue;">
+        
+        <div style="margin-left:auto;margin-right:auto;text-align:center">
+            <form class="center" method="POST" enctype="multipart/form-data">
+                <input type="file" name="query_img"><br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<form class="example" method="POST" enctype="multipart/form-data" style="margin:auto;max-width:300px">
+  <input type="file" name="query_img">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</body>
+</html> 

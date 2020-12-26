@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sbar::-webkit-scrollbar {
+    display: none;
+}
+
+.sbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: linear-gradient(to right, rgb(122, 88, 88), rgb(83, 83, 112), rgb(88, 57, 83));
+  z-index:1;
+  height: 40%;
+  display: block;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border-top: 16px solid #ffffff;
+  animation: spin 0.5s linear infinite;
+  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Add styles to the form container */
+.container {
+  max-width: 1000px;
+  position: absolute;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  border-radius: 5px;
+  transform: translate(-50%, -100%);
+  box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.5);
+  z-index:10;
+}
+
+/* Full-width input fields */
+
+
+label {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  border: none;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 10;
+
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#grad1 {
+  background-image: linear-gradient(to right, rgb(122, 88, 88), rgb(83, 83, 112), rgb(88, 57, 83));
+}
+
+.btn:hover {
+  transition: .3s ease;
+  opacity: 1;
+}
+/* Center website */
+.main {
+  max-width: 1040px;
+  margin: auto;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 60px;
+  word-break: break-all;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+p {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+.row {
+  margin: 0px -0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+  
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  float: left;
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.content:hover {
+  background-color: rgba(255, 255, 255);
+  opacity: 0.7;
+  transition: .3s ease;
+}
+
+.content2 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  width: 15%;
+  text-align: center;
+}
+
+#imghover {
+  border-radius: 5px 5px 0px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body id="grad1" class="sbar">
+
+<!-- MAIN (Center website) -->
+<div class="bg-img"></div>
+<form method="POST" class="container" enctype="multipart/form-data">
+  <a href="http://127.0.0.1:5000/"><h1>I . K . W . Y . W</h1></a>
+  <label class="btn" style="font-size: 20px;">
+  <i class="fa fa-camera"> Click right here to select the image you want to retrieve</i><input type="file" style="display: none;" name="query_img">
+  </label>
+  <button type="submit" class="btn" style="font-size: 20px;" onclick="loading();"><i class="fa fa-search"> Click me to retrieve your uploaded image in 3 seconds</i></button>
+</form>
+<br>
+<div id="loader" style="display:none;"></div>
+<div class='main' style="display:block;" id="content">
+  <div class="row" style="padding: 10px;">
+    {% if query_path %}
+    <div class="column">
+        <div class="content">
+          <img id="imghover" src="{{ query_path }}" alt="Lights" style="width:100%">
+          {% if map %}
+          <p>Average precision: {{ map[0] }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+<!-- Portfolio Gallery Grid -->
+  <div class="row">
+    {% for score in scores %}
+    <div class="column">
+        <div class="content">
+          <a href="{{ score[2] }}"><img id="imghover" src="{{ score[1] }}" alt="Lights" style="width:100%"></a>
+          <p>{{ score[0] }}</p>
+        </div>
+      </div>
+    {% endfor %}
+    <!-- END GRID -->
+  </div>
+<!-- END MAIN -->
+</div>
+
+<script type="text/javascript"> 
+  function loading(){
+    document.getElementById("loader").style.display = "block";
+    document.getElementById("content").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
