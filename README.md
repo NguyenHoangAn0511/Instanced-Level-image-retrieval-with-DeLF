@@ -11,7 +11,7 @@
    * [Install requirements](#install-requirements)
    * [Demo](#Demo)
    * [Checklist](#Checklist)
-   * [Run streamlit](#Run-streamlit-(Change-to-Makeup-directory-)-)
+   * [Run streamlit](#Run-streamlit)
    
 <!--te-->
 
@@ -30,7 +30,8 @@ pip install -r requirements.txt
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/PURRPLE-hair.jpeg)
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/MAKEUP-adjust.jpeg)
 
-## Run streamlit (Change to Makeup directory):
+## Run streamlit:
+- Change to Makeup directory
 ```
 streamlit run main.py
 ```
