@@ -11,7 +11,7 @@
    * [Install requirements](#install-requirements)
    * [Demo](#Demo)
    * [Checklist](#Checklist)
-   * [Run Flask](#Run-Flask)
+   * [Run code](#Run-code)
    
 <!--te-->
 
