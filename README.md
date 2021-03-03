@@ -11,7 +11,7 @@
    * [Install requirements](#install-requirements)
    * [Demo](#Demo)
    * [Checklist](#Checklist)
-   * [Run streamlit](#Run-streamlit)
+   * [Run Flask](#Run-Flask)
    
 <!--te-->
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/PURRPLE-hair.jpeg)
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/MAKEUP-adjust.jpeg)
 
-## Run streamlit:
+## Run Flask:
 - Change to Makeup directory
 ```
 streamlit run main.py
@@ -48,6 +48,6 @@ Link to streamlit: https://www.streamlit.io/
 - [x] Process uploaded image
 - [x] Save Image to Database
 - [x] Interactive Web app
-- [x] Face detection (Facial Landmark, Face parsing)
-- [x] Image filter (Vintage, ...)
-- [x] Dye hair & better eyebrow color
+- [x] Retrieve Image
+- [x] Average Precision and Mean Average Precision
+- [x] Optimize processing time
