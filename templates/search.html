@@ -271,11 +271,11 @@ p {
 <div class='main' style="display:block;" id="content">
   <div class="row" style="padding: 10px;">
     {% if query_path %}
-    <div class="column">
+      <div class="column">
         <div class="content">
           <img id="imghover" src="{{ query_path }}" alt="Lights" style="width:100%">
-          {% if map %}
-          <p>Average precision: {{ map[0] }}</p>
+          {% if ap %}
+          <p>AP: {{ ap[0] }} / MAP: {{ map }}</p>
           {% endif %}
         </div>
       </div>
