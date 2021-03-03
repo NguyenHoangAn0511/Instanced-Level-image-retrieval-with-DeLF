@@ -23,29 +23,32 @@ pip install -r requirements.txt
 ## Demo
 
 ### Main screen
-![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/main.jpeg)
+![alt text]()
 
-### Image Enhance + Filter + Dye hair example
-![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/POSTERIZE%20%2B%20OBLUE.jpeg)
-![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/PURRPLE-hair.jpeg)
-![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/MAKEUP-adjust.jpeg)
+### Example
+![alt text]()
+![alt text]()
+![alt text]()
 
 ## Run code:
-Extract Database (if you update or create new database)
+Extract Database (if you update or create new database):
 ```
 python extract.py
 ```
+To run main code:
 ```
 python server.py
 ```
 ###### Output:
 ```
-You can now view your Streamlit app in your browser.
-
-  Local URL: http://localhost:8501
-  Network URL: http://192.168.1.5:8501
+* Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-Link to streamlit: https://www.streamlit.io/
+Go to http://127.0.0.1:5000/
 ## Checklist
 - [x] Upload Image
 - [x] Process uploaded image
