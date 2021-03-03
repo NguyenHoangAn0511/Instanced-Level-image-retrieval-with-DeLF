@@ -193,13 +193,13 @@ def image_index_2_accumulated_indexes(index, accumulated_indexes_boundaries):
 delf = hub.load('model').signatures['default']
 
 
-def MAP_():
+def AP_():
     hit = 0.0
     score = 0.0
     loop = 0.0
     true = 0
 
-    f = open('MAP.txt', 'r+')
+    f = open('AP.txt', 'r+')
     f = f.readlines()
     for i in range(len(f)):
         if f[i] == f[1]:
@@ -208,7 +208,7 @@ def MAP_():
             score += hit/loop
             true+=1
         else: loop+=1
-    return (round((score/true),4)), true
+    return (round((score/true),2)), true
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -271,13 +271,29 @@ def index():
             score.append((building_descs[index], db_images[index], base[index]))
 
 
-        with open('MAP.txt', 'w') as f:
+        with open('AP.txt', 'w') as f:
             for item, _, _ in score:
                 f.write("%s\n" % item)
 
-        map = MAP_()
+        ap = AP_()
 
-        return render_template("search.html", query_path=upload_img_path, scores=score, map=map)
+        map = open("MAP.txt","a")
+        map.write(str(ap[0]) + "\n")
+        map.close()
+
+        Map = 0.0
+        ind = 1
+        with open('MAP.txt', 'r') as m:
+            for line in m:
+                try:
+                    num = float(line)
+                    Map += num
+                except ValueError:
+                    print('{} is not a number!'.format(line))
+                ind += 1
+        Map = round(Map / (ind - 1), 2)
+
+        return render_template("search.html", query_path=upload_img_path, scores=score, ap=ap, map=Map)
     else:
         return render_template("search2.html")
 
