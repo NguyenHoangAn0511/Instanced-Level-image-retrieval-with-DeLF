@@ -30,10 +30,13 @@ pip install -r requirements.txt
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/PURRPLE-hair.jpeg)
 ![alt text](https://github.com/NguyenHoangAn0511/Make-up-application-DeepLearning-Flask/blob/main/Makeup/example/MAKEUP-adjust.jpeg)
 
-## Run Flask:
-- Change to Makeup directory
+## Run code:
+Extract Database (if you update or create new database)
 ```
-streamlit run main.py
+python extract.py
+```
+```
+python server.py
 ```
 ###### Output:
 ```
