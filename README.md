@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 
 ## Data
-Our data is around 1000 landscape images of 20 class of [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark)
+Our data is around 1300 landscape images of 20 class from [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark)
 
 ## Demo
 
