@@ -26,9 +26,9 @@ pip install -r requirements.txt
 ![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/main.jpeg)
 
 ### Example
-![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/1.jpeg)
-![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/2.jpeg)
-![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/3.jpeg)
+![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/1.png)
+![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/2.png)
+![alt text](https://github.com/NguyenHoangAn0511/Instanced-Level-image-retrieval-with-DeLF/blob/main/demo/3.png)
 
 ## Run code:
 Extract Database (if you update or create new database):
