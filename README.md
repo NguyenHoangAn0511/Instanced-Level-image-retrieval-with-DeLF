@@ -19,7 +19,9 @@
 
 ## Introduction
 This project is on the field of Computer Vision, an sub-domain of Computer Science. On this project, we build our image retriveval system based on the famous paper public in ICCV 2017: [Large-Scale Image Retrieval with Attentive Deep Local Features](https://arxiv.org/abs/1612.06321). 
+
 Evaluation our system by Average Precision and Mean Average Precision
+
 Futhermore, we use [Flask](https://flask.palletsprojects.com/en/1.1.x/) - an web framework using for python to build our GUI
 
 ## Install requirements
